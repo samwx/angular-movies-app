@@ -34,4 +34,8 @@ export class MoviesService {
   getPopular(): Observable<any> {
     return this.http.get<IMoviesResult>(withBaseUrl('movie/popular'));
   }
+
+  getMovieByDetail(id: string): Observable<any> {
+    return this.http.get<any>(withBaseUrl(`movie/${id}`));
+  }
 }

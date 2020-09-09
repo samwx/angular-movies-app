@@ -1,0 +1,14 @@
+<h1>{{ movieDetail.title }}</h1>
+<div style="width: 500px">
+  <figure>
+    <img
+      [src]="
+        'https://image.tmdb.org/t/p/w300_and_h450_bestv2' + movieDetail.poster_path
+      "
+      alt=""
+    />
+  </figure>
+  <p>
+    {{ movieDetail.overview }}
+  </p>
+</div>

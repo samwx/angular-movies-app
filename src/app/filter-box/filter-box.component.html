@@ -1,0 +1,15 @@
+<div class="filter-box">
+  <p>
+    <label for="select-filter">Ordenar por:</label>
+  </p>
+  <select
+    (change)="onFilterChange()"
+    [(ngModel)]="filterType"
+    name="select-filter"
+    id="select-filter"
+  >
+    <option value="">Selecionar...</option>
+    <option value="voteCount">Número de votos</option>
+    <option value="title">Título</option>
+  </select>
+</div>
